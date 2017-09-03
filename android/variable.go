@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"lineage/soong/android"
+	"sm/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -88,7 +88,7 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
-		// include Lineage variables
+		// include SudaMod variables
 		*android.Product_variables
 	} `android:"arch_variant"`
 }
@@ -156,7 +156,7 @@ type productVariables struct {
 
 	Override_rs_driver *string `json:",omitempty"`
 
-	// include Lineage variables
+	// include SudaMod variables
 	*android.ProductVariables
 }
 
